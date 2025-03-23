@@ -8,6 +8,7 @@ authors = ["hissanova <369bodhisattva@gmail.com>"]
 python = "^3.10"
 matplotlib = "^3.10.1"
 jupyter = "^1.1.1"
+plotly = {extras = ["express"], version = "^6.0.1"}
 
 [tool.poetry.dev-dependencies]
 
