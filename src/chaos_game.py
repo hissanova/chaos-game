@@ -59,6 +59,7 @@ def get_random_selector(n: int) -> IndexSelector:
 
     return _selector
 
+from tqdm import tqdm
 
 def create_game(
     start: np.array,
@@ -69,7 +70,7 @@ def create_game(
     rounds: int,
 ):
     points = [start]
-    for i in range(rounds):
+    for i in tqdm(range(rounds)):
         index = selector(points)
         next_point = proceed_func(fixed_points[index], points[i], ratio)
         next_point = np.array([next_point])
