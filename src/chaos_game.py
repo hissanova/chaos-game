@@ -1,14 +1,14 @@
-from math import cos, sin, pi
-from random import randint
 from typing import Callable, Dict, List, NamedTuple, Sequence
 from pathlib import Path
-#--- middle point ---#
-from math import acos, cos, sin, sqrt
+from random import randint
+from math import acos, cos, pi, sin, sqrt
 
+
+import numpy as np
+from tqdm import tqdm
 # import matplotlib.pyplot as plt
 # import matplotlib
 # import seaborn as sns
-import numpy as np
 # import plotly.graph_objects as go
 
 
@@ -59,7 +59,6 @@ def get_random_selector(n: int) -> IndexSelector:
 
     return _selector
 
-from tqdm import tqdm
 
 def create_game(
     start: np.array,
